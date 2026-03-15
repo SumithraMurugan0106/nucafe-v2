@@ -13,13 +13,16 @@ NEON_URL = "postgresql://neondb_owner:npg_0lSMa2wbyHVF@ep-icy-bird-a1ix5uqr-pool
 DATABASE_URL = os.getenv("DATABASE_URL", NEON_URL)
 
 # Professional connection pooling for scalability
+# In database.py
 engine = create_engine(
-    DATABASE_URL, 
-    pool_size=10, 
-    max_overflow=20,
-    pool_pre_ping=True  # Important: checks if connection is alive before using it
+    DATABASE_URL,
+    connect_args={
+        'sslmode': 'require',
+        'connect_timeout': 10  # This now lives inside connect_args
+    },
+    pool_pre_ping=True,
+    pool_recycle=300
 )
-
 Session = sessionmaker(bind=engine)
 Base = declarative_base()
 

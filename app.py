@@ -11,18 +11,12 @@ from rapidfuzz import fuzz, process
 from database import Session, User, Order, MenuItem, hash_password, check_password
 
 # --- 1. CONFIG ---
-st.set_page_config(layout="wide", page_title="NuCafé Premium", page_icon="🍽️")
-def get_predicted_wait_time(base_prep_time):
-    with Session() as db:
-        # Count total active/recent orders in the last 30 mins to estimate kitchen load
-        # For this simplified version, we'll just count total orders in the DB
-        active_orders_count = db.query(Order).count()
-        
-        # Load Factor: Add 2 minutes for every 5 active orders
-        load_penalty = (active_orders_count // 5) * 2
-        
-        predicted_time = base_prep_time + load_penalty
-        return predicted_time
+# Replace that "keyboard_double" line with a clean header
+st.set_page_config(page_title="NuCafe", page_icon="☕", layout="wide")
+
+# Use this for a clean, centered title
+st.markdown("<h1 style='text-align: center; color: #FF4B4B;'>NuCafe Digital Menu</h1>", unsafe_allow_html=True)
+st.markdown("<p style='text-align: center; font-size: 18px;'>Fresh Food • Fast Delivery • Fine Taste</p>", unsafe_allow_html=True)
 def search_menu(query, menu_items):
     names = [item.name for item in menu_items]
 
@@ -39,33 +33,71 @@ def search_menu(query, menu_items):
 st.markdown("""
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
-    html, body, [class*="st-"] { font-family: 'Poppins', sans-serif; background-color: #0F0F0F; }
     
-    /* Menu Card Styles */
-    .section-title { font-size: 1.8rem; font-weight: 700; margin: 40px 0 20px 0; color: #FFFFFF; border-left: 5px solid #E50914; padding-left: 15px; }
-    .classic-card { background: #1A1A1A; border-radius: 15px; transition: 0.3s; border: 1px solid #2A2A2A; margin-bottom: 10px; height: 100%; }
-    .classic-card:hover { transform: translateY(-5px); border-color: #E50914; box-shadow: 0 10px 20px rgba(0,0,0,0.5); }
-    .img-container { width: 100%; height: 180px; border-radius: 15px 15px 0 0; overflow: hidden; }
-    .img-container img { width: 100%; height: 100%; object-fit: cover; }
-    .card-meta { padding: 15px; }
-    .food-name { font-size: 1.1rem; font-weight: 600; color: white; margin-bottom: 5px; }
-    .food-price { color: #FFB800; font-weight: 700; font-size: 1rem; }
-    
-   /* Totally removes the text artifact while keeping the sidebar functionality */
-[data-testid="collapsedControl"] {
-    text-indent: -9999px;
-    white-space: nowrap;
-}
+    /* Apply font and background safely */
+    .dna-match {
+        background: rgba(229, 9, 20, 0.1);
+        color: #E50914;
+        padding: 2px 8px;
+        border-radius: 5px;
+        font-size: 0.7rem;
+        font-weight: 700;
+    }
+    .stApp {
+        font-family: 'Poppins', sans-serif;
+        background-color: #0F0F0F;
+    }
 
-[data-testid="collapsedControl"]::after {
-    content: "☰"; 
-    text-indent: 0;
-    float: left;
-    color: white;
-    font-size: 28px;
-    margin-left: 10px;
-}
-            
+    /* Section Titles with that Red Accent */
+    .section-title { 
+        font-size: 1.8rem; 
+        font-weight: 700; 
+        margin: 20px 0; 
+        color: #FFFFFF; 
+        border-left: 5px solid #E50914; 
+        padding-left: 15px; 
+    }
+
+    /* Menu Card Styles */
+    .classic-card { 
+        background: #1A1A1A; 
+        border-radius: 15px; 
+        transition: transform 0.3s ease, border-color 0.3s ease; 
+        border: 1px solid #2A2A2A; 
+        padding: 0px;
+        overflow: hidden;
+    }
+    .classic-card:hover { 
+        transform: translateY(-5px); 
+        border-color: #E50914; 
+        box-shadow: 0 10px 20px rgba(229, 9, 20, 0.2); 
+    }
+
+    /* Image Container Fix */
+    .img-container img { 
+        width: 100%; 
+        height: 180px; 
+        object-fit: cover;
+        border-radius: 15px 15px 0 0;
+    }
+
+    /* Typography inside cards */
+    .food-name { font-size: 1.1rem; font-weight: 600; color: white; padding: 10px 15px 0 15px; }
+    .food-price { color: #FFB800; font-weight: 700; font-size: 1.2rem; padding: 0 15px 15px 15px; }
+
+    /* FIX: The Sidebar Toggle Button */
+    /* This replaces the 'keyboard_double' text with a clean icon safely */
+    [data-testid="collapsedControl"] {
+        color: white;
+        background-color: rgba(255,255,255,0.05);
+        border-radius: 10px;
+        margin: 10px;
+    }
+    
+    /* Hiding the Streamlit "Made with..." footer to keep it clean */
+    footer {visibility: hidden;}
+    header {visibility: hidden;}
+
 </style>
 """, unsafe_allow_html=True)
 
@@ -97,46 +129,6 @@ def get_all_scores(user_id):
     scores = np.dot(ai['Q'], user_vec)
     final = np.clip(scores * 100, 45, 99).astype(int)
     return {name: final[idx] for name, idx in ai['food_to_idx'].items()}
-
-def render_classic_row(title, foods, is_trending=False):
-    if not foods: return
-    st.markdown(f"<div class='section-title'>{title}</div>", unsafe_allow_html=True)
-    
-    score_map = get_all_scores(st.session_state.get('user_id', 0))
-    
-    # Process items in batches of 4 to create a grid
-    for i in range(0, len(foods), 4):
-        cols = st.columns(4)
-        batch = foods[i : i + 4]
-        
-        for idx, name in enumerate(batch):
-            item_data = menu_df[menu_df['food_name'] == name]
-            if item_data.empty: continue
-            item = item_data.iloc[0]
-            match = score_map.get(name, 50)
-            
-            with cols[idx]:
-                st.markdown(f"""
-                    <div class="classic-card">
-                        <div class="img-container"><img src="{item['image']}"></div>
-                        <div class="card-meta">
-                            <span class="dna-match">{'🔥 Trending' if is_trending else f'⭐ {match}% DNA Match'}</span>
-                            <div class="food-name">{name}</div>
-                            <div class="food-price">₹{int(item['price'])}</div>
-                        </div>
-                    </div>
-                """, unsafe_allow_html=True)
-                
-                if st.button(f"Add to Plate", key=f"add_{name}_{title}_{i}_{idx}", width='stretch'):
-                    if name in st.session_state.cart:
-                        st.session_state.cart[name]['qty'] += 1
-                    else:
-                        st.session_state.cart[name] = {
-                            'price': float(item['price']), 
-                            'qty': 1, 
-                            'category': str(item['category'])
-                        }
-                    st.toast(f"✅ {name} added!")
 def get_complementary_recommendations(cart_items):
     if not cart_items:
         return []
@@ -189,18 +181,23 @@ if 'user_id' not in st.session_state or st.session_state.user_id is None:
 
 # --- 5. SIDEBAR ---
 with st.sidebar:
-    st.markdown(f"### 👑 Welcome, {st.session_state.username}")
+    # 👑 User Profile Section
+    st.markdown(f"### 👑 Welcome, **{st.session_state.username.capitalize()}**")
+    st.divider()
     
-    # 🧬 Taste DNA Chart
+    # 🧬 Taste DNA Chart (Visual Cleanup)
     st.markdown("#### 🧬 Your Taste DNA")
     with Session() as db:
         user_orders = db.query(Order.category).filter_by(user_id=st.session_state.user_id).all()
         if user_orders:
             dna_data = pd.Series([o[0] for o in user_orders]).value_counts()
-            st.bar_chart(dna_data, color="#E50914")
+            # Reduced height to prevent sidebar scrolling too much
+            st.bar_chart(dna_data, color="#E50914", height=150)
         else:
-            st.caption("DNA building in progress...")
+            st.info("DNA building in progress... Order something! 🍽️")
     
+    st.divider()
+
     # 🛒 Your Order (Cart)
     st.markdown("#### 🛒 Your Order")
     if not st.session_state.get('cart'):
@@ -209,38 +206,38 @@ with st.sidebar:
         total = 0
         current_cart_names = list(st.session_state.cart.keys())
         
-        # Display items in cart
+        # Display items in cart with better spacing
         for name, info in list(st.session_state.cart.items()):
             item_total = info['price'] * info['qty']
             total += item_total
-            c1, c2 = st.columns([3, 1])
-            with c1:
-                st.write(f"**{name}** (x{info['qty']})")
-                st.caption(f"₹{int(item_total)}")
-            with c2:
-                if st.button("🗑️", key=f"remove_{name}"):
+            
+            # Using st.expander or simple rows to avoid tiny cramped columns
+            with st.container():
+                c1, c2 = st.columns([4, 1])
+                c1.write(f"**{name}** (x{info['qty']})")
+                if c2.button("🗑️", key=f"remove_{name}"):
                     if info['qty'] > 1:
                         st.session_state.cart[name]['qty'] -= 1
                     else:
                         del st.session_state.cart[name]
                     st.rerun()
+                st.caption(f"Price: ₹{int(item_total)}")
 
         st.markdown(f"### Total: ₹{int(total)}")
 
-        # --- SMART RECOMMENDATIONS (The Solution) ---
+        # --- SMART RECOMMENDATIONS ---
         recs = get_complementary_recommendations(current_cart_names)
         if recs:
             st.markdown("---")
             st.markdown("##### 🍟 Pair it with...")
             for rec_name in recs:
-                # Check if item exists in menu to avoid IndexError
                 item_data = menu_df[menu_df['food_name'] == rec_name]
                 if not item_data.empty:
                     item_info = item_data.iloc[0]
+                    # Vertical layout for recs looks better in a narrow sidebar
                     col_rec1, col_rec2 = st.columns([3, 1])
                     with col_rec1:
-                        st.write(f"**{rec_name}**")
-                        st.caption(f"₹{int(item_info['price'])}")
+                        st.write(f"{rec_name} (₹{int(item_info['price'])})")
                     with col_rec2:
                         if st.button("➕", key=f"rec_{rec_name}"):
                             st.session_state.cart[rec_name] = {
@@ -250,7 +247,8 @@ with st.sidebar:
                             }
                             st.rerun()
 
-        if st.button("PROCEED TO PAY", width='stretch', type="primary"):
+        # Big Action Button
+        if st.button("PROCEED TO PAY", use_container_width=True, type="primary"):
             with Session() as db:
                 for name, info in st.session_state.cart.items():
                     for _ in range(info['qty']):
@@ -260,41 +258,37 @@ with st.sidebar:
             st.success("Order Placed! 🎉")
             st.rerun()
 
-    # 📜 Grouped History
-    st.markdown("---")
+    # 📜 Grouped History (Visual Cleanup)
+    st.divider()
     st.markdown("#### 📜 Recent Orders")
     with Session() as db:
         history_data = db.query(
             Order.food_name, Order.price, Order.category, func.count(Order.id).label('qty')
         ).filter_by(user_id=st.session_state.user_id).group_by(
             Order.food_name, Order.price, Order.category
-        ).order_by(func.max(Order.id).desc()).limit(10).all()
+        ).order_by(func.max(Order.id).desc()).limit(5).all() # Limited to 5 for cleanliness
         
         if history_data:
-            with st.container(height=300):
+            # Container with fixed height for scrolling history
+            with st.container(height=250):
                 for name, price, cat, qty in history_data:
                     st.markdown(f"""
-                    <div style="background: #1A1A1A; border-radius: 10px; padding: 12px; margin-bottom: 5px; border-left: 4px solid #E50914;">
-                        <div style="display: flex; justify-content: space-between;">
-                            <span style="color: white; font-weight: 600;">{name}</span>
-                            <span style="color: #46D369; font-size: 0.8rem;">x{qty}</span>
-                        </div>
-                        <div style="display: flex; justify-content: space-between;">
-                            <span style="color: #888; font-size: 0.8rem;">{cat}</span>
-                            <span style="color: #FFB800; font-weight: 700;">₹{int(price)}</span>
-                        </div>
+                    <div style="background: #1A1A1A; border-radius: 8px; padding: 10px; margin-bottom: 8px; border-left: 3px solid #E50914;">
+                        <div style="color: white; font-weight: 600; font-size: 0.9rem;">{name} <span style="color: #46D369;">x{qty}</span></div>
+                        <div style="color: #888; font-size: 0.75rem;">₹{int(price)} | {cat}</div>
                     </div>
                     """, unsafe_allow_html=True)
-                    if st.button(f"Reorder {name}", key=f"re_{name}_{qty}"):
+                    if st.button(f"Reorder {name}", key=f"re_{name}_{qty}", use_container_width=True):
                         st.session_state.cart[name] = {'price': float(price), 'qty': 1, 'category': str(cat)}
                         st.rerun()
         else:
             st.caption("No history yet.")
 
-    if st.button("Sign Out", width='stretch'):
+    # Sign Out at the very bottom
+    if st.button("Sign Out", use_container_width=True):
         st.session_state.user_id = None
+        st.session_state.username = None
         st.rerun()
-   
 # --- 6. MAIN CONTENT ---
 
 # Search & Diet Filter
