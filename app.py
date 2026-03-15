@@ -86,18 +86,19 @@ st.markdown("""
     .food-price { color: #FFB800; font-weight: 700; font-size: 1.2rem; padding: 0 15px 15px 15px; }
 
     /* FIX: The Sidebar Toggle Button */
-    /* This replaces the 'keyboard_double' text with a clean icon safely */
-    [data-testid="collapsedControl"] {
-        color: white;
-        background-color: rgba(255,255,255,0.05);
-        border-radius: 10px;
-        margin: 10px;
+    /* Hide the 'Made with Streamlit' footer */
+    footer {visibility: hidden;}
+
+    /* Only hide the top right menu, NOT the sidebar toggle icon */
+    [data-testid="stHeader"] {
+        background: transparent;
     }
     
-    /* Hiding the Streamlit "Made with..." footer to keep it clean */
-    footer {visibility: hidden;}
-    header {visibility: hidden;}
-
+    /* Ensure the toggle button is visible and colored red to stand out */
+    [data-testid="collapsedControl"] {
+        color: #E50914 !important; 
+        visibility: visible !important;
+    }
 </style>
 """, unsafe_allow_html=True)
 
