@@ -1,0 +1,1010 @@
+[
+    {
+        "food_name": "CTR Benne Masala Dosa",
+        "category": "South Indian",
+        "price": 95,
+        "prep_time": 10,
+        "image": "https://images.unsplash.com/photo-1668236543090-82eba5ee5976?w=600&auto=format&fit=crop&q=60",
+        "is_new": "no"
+    },
+    {
+        "food_name": "Filter Coffee",
+        "category": "Beverage",
+        "price": 40,
+        "prep_time": 5,
+        "image": "https://images.unsplash.com/photo-1609951651556-5334e2706168?w=600&auto=format&fit=crop&q=60",
+        "is_new": "no"
+    },
+    {
+        "food_name": "MTR Rava Idli",
+        "category": "South Indian",
+        "price": 80,
+        "prep_time": 8,
+        "image": "https://images.unsplash.com/photo-1668236543090-82eba5ee5976?w=600&auto=format&fit=crop&q=60",
+        "is_new": "no"
+    },
+    {
+        "food_name": "Meghana Chicken Biryani",
+        "category": "Biryani",
+        "price": 320,
+        "prep_time": 20,
+        "image": "https://images.unsplash.com/photo-1589302168068-964664d93dc0?w=600&auto=format&fit=crop&q=60",
+        "is_new": "no"
+    },
+    {
+        "food_name": "Truffles All American Burger",
+        "category": "Fastfood",
+        "price": 290,
+        "prep_time": 15,
+        "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&auto=format&fit=crop&q=60",
+        "is_new": "no"
+    },
+    {
+        "food_name": "VV Puram Chat Basket",
+        "category": "Snack",
+        "price": 80,
+        "prep_time": 5,
+        "image": "https://images.unsplash.com/photo-1484723091739-30a097e8f929?w=600&auto=format&fit=crop&q=60",
+        "is_new": "no"
+    },
+    {
+        "food_name": "Special North Indian Paratha 1",
+        "category": "North Indian",
+        "price": 382,
+        "prep_time": 6,
+        "image": "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600&auto=format&fit=crop&q=60",
+        "is_new": "yes"
+    },
+    {
+        "food_name": "Special Beverage Masala Chai 2",
+        "category": "Beverage",
+        "price": 315,
+        "prep_time": 10,
+        "image": "https://images.unsplash.com/photo-1609951651556-5334e2706168?w=600&auto=format&fit=crop&q=60",
+        "is_new": "no"
+    },
+    {
+        "food_name": "Special Snack Kachori 3",
+        "category": "Snack",
+        "price": 412,
+        "prep_time": 6,
+        "image": "https://images.unsplash.com/photo-1484723091739-30a097e8f929?w=600&auto=format&fit=crop&q=60",
+        "is_new": "no"
+    },
+    {
+        "food_name": "Special Biryani Ambur 4",
+        "category": "Biryani",
+        "price": 448,
+        "prep_time": 5,
+        "image": "https://images.unsplash.com/photo-1589302168068-964664d93dc0?w=600&auto=format&fit=crop&q=60",
+        "is_new": "no"
+    },
+    {
+        "food_name": "Special Biryani Lucknowi 5",
+        "category": "Biryani",
+        "price": 125,
+        "prep_time": 7,
+        "image": "https://images.unsplash.com/photo-1589302168068-964664d93dc0?w=600&auto=format&fit=crop&q=60",
+        "is_new": "yes"
+    },
+    {
+        "food_name": "Special Fastfood Momos 6",
+        "category": "Fastfood",
+        "price": 313,
+        "prep_time": 22,
+        "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&auto=format&fit=crop&q=60",
+        "is_new": "no"
+    },
+    {
+        "food_name": "Special Snack Pani Puri 7",
+        "category": "Snack",
+        "price": 98,
+        "prep_time": 17,
+        "image": "https://images.unsplash.com/photo-1484723091739-30a097e8f929?w=600&auto=format&fit=crop&q=60",
+        "is_new": "no"
+    },
+    {
+        "food_name": "Special Biryani Donne 8",
+        "category": "Biryani",
+        "price": 418,
+        "prep_time": 23,
+        "image": "https://images.unsplash.com/photo-1589302168068-964664d93dc0?w=600&auto=format&fit=crop&q=60",
+        "is_new": "no"
+    },
+    {
+        "food_name": "Special Beverage Filter Coffee 9",
+        "category": "Beverage",
+        "price": 88,
+        "prep_time": 24,
+        "image": "https://images.unsplash.com/photo-1609951651556-5334e2706168?w=600&auto=format&fit=crop&q=60",
+        "is_new": "no"
+    },
+    {
+        "food_name": "Special Beverage Cold Coffee 10",
+        "category": "Beverage",
+        "price": 197,
+        "prep_time": 9,
+        "image": "https://images.unsplash.com/photo-1609951651556-5334e2706168?w=600&auto=format&fit=crop&q=60",
+        "is_new": "no"
+    },
+    {
+        "food_name": "Special North Indian Butter Chicken 11",
+        "category": "North Indian",
+        "price": 70,
+        "prep_time": 24,
+        "image": "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600&auto=format&fit=crop&q=60",
+        "is_new": "no"
+    },
+    {
+        "food_name": "Special Fastfood Pizza 12",
+        "category": "Fastfood",
+        "price": 375,
+        "prep_time": 15,
+        "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&auto=format&fit=crop&q=60",
+        "is_new": "no"
+    },
+    {
+        "food_name": "Special South Indian Dosa 13",
+        "category": "South Indian",
+        "price": 341,
+        "prep_time": 25,
+        "image": "https://images.unsplash.com/photo-1668236543090-82eba5ee5976?w=600&auto=format&fit=crop&q=60",
+        "is_new": "no"
+    },
+    {
+        "food_name": "Special South Indian Bhat 14",
+        "category": "South Indian",
+        "price": 248,
+        "prep_time": 17,
+        "image": "https://images.unsplash.com/photo-1668236543090-82eba5ee5976?w=600&auto=format&fit=crop&q=60",
+        "is_new": "yes"
+    },
+    {
+        "food_name": "Special Biryani Ambur 15",
+        "category": "Biryani",
+        "price": 381,
+        "prep_time": 23,
+        "image": "https://images.unsplash.com/photo-1589302168068-964664d93dc0?w=600&auto=format&fit=crop&q=60",
+        "is_new": "no"
+    },
+    {
+        "food_name": "Special Snack Samosa 16",
+        "category": "Snack",
+        "price": 222,
+        "prep_time": 10,
+        "image": "https://images.unsplash.com/photo-1484723091739-30a097e8f929?w=600&auto=format&fit=crop&q=60",
+        "is_new": "yes"
+    },
+    {
+        "food_name": "Special Beverage Fruit Juice 17",
+        "category": "Beverage",
+        "price": 106,
+        "prep_time": 10,
+        "image": "https://images.unsplash.com/photo-1609951651556-5334e2706168?w=600&auto=format&fit=crop&q=60",
+        "is_new": "no"
+    },
+    {
+        "food_name": "Special South Indian Dosa 18",
+        "category": "South Indian",
+        "price": 438,
+        "prep_time": 24,
+        "image": "https://images.unsplash.com/photo-1668236543090-82eba5ee5976?w=600&auto=format&fit=crop&q=60",
+        "is_new": "no"
+    },
+    {
+        "food_name": "Special North Indian Butter Chicken 19",
+        "category": "North Indian",
+        "price": 340,
+        "prep_time": 13,
+        "image": "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600&auto=format&fit=crop&q=60",
+        "is_new": "no"
+    },
+    {
+        "food_name": "Special South Indian Bhat 20",
+        "category": "South Indian",
+        "price": 343,
+        "prep_time": 23,
+        "image": "https://images.unsplash.com/photo-1668236543090-82eba5ee5976?w=600&auto=format&fit=crop&q=60",
+        "is_new": "no"
+    },
+    {
+        "food_name": "Special Beverage Lassi 21",
+        "category": "Beverage",
+        "price": 154,
+        "prep_time": 14,
+        "image": "https://images.unsplash.com/photo-1609951651556-5334e2706168?w=600&auto=format&fit=crop&q=60",
+        "is_new": "no"
+    },
+    {
+        "food_name": "Special Snack Vada Pav 22",
+        "category": "Snack",
+        "price": 348,
+        "prep_time": 8,
+        "image": "https://images.unsplash.com/photo-1484723091739-30a097e8f929?w=600&auto=format&fit=crop&q=60",
+        "is_new": "yes"
+    },
+    {
+        "food_name": "Special South Indian Uttapam 23",
+        "category": "South Indian",
+        "price": 197,
+        "prep_time": 25,
+        "image": "https://images.unsplash.com/photo-1668236543090-82eba5ee5976?w=600&auto=format&fit=crop&q=60",
+        "is_new": "no"
+    },
+    {
+        "food_name": "Special South Indian Bhat 24",
+        "category": "South Indian",
+        "price": 450,
+        "prep_time": 14,
+        "image": "https://images.unsplash.com/photo-1668236543090-82eba5ee5976?w=600&auto=format&fit=crop&q=60",
+        "is_new": "no"
+    },
+    {
+        "food_name": "Special North Indian Chole Bhature 25",
+        "category": "North Indian",
+        "price": 96,
+        "prep_time": 5,
+        "image": "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600&auto=format&fit=crop&q=60",
+        "is_new": "no"
+    },
+    {
+        "food_name": "Special North Indian Paneer Tikka 26",
+        "category": "North Indian",
+        "price": 57,
+        "prep_time": 16,
+        "image": "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600&auto=format&fit=crop&q=60",
+        "is_new": "no"
+    },
+    {
+        "food_name": "Special Biryani Lucknowi 27",
+        "category": "Biryani",
+        "price": 142,
+        "prep_time": 14,
+        "image": "https://images.unsplash.com/photo-1589302168068-964664d93dc0?w=600&auto=format&fit=crop&q=60",
+        "is_new": "yes"
+    },
+    {
+        "food_name": "Special Biryani Egg Biryani 28",
+        "category": "Biryani",
+        "price": 234,
+        "prep_time": 11,
+        "image": "https://images.unsplash.com/photo-1589302168068-964664d93dc0?w=600&auto=format&fit=crop&q=60",
+        "is_new": "no"
+    },
+    {
+        "food_name": "Special Biryani Lucknowi 29",
+        "category": "Biryani",
+        "price": 312,
+        "prep_time": 24,
+        "image": "https://images.unsplash.com/photo-1589302168068-964664d93dc0?w=600&auto=format&fit=crop&q=60",
+        "is_new": "no"
+    },
+    {
+        "food_name": "Special Biryani Veg Biryani 30",
+        "category": "Biryani",
+        "price": 81,
+        "prep_time": 24,
+        "image": "https://images.unsplash.com/photo-1589302168068-964664d93dc0?w=600&auto=format&fit=crop&q=60",
+        "is_new": "no"
+    },
+    {
+        "food_name": "Special South Indian Vada 31",
+        "category": "South Indian",
+        "price": 81,
+        "prep_time": 6,
+        "image": "https://images.unsplash.com/photo-1668236543090-82eba5ee5976?w=600&auto=format&fit=crop&q=60",
+        "is_new": "no"
+    },
+    {
+        "food_name": "Special Fastfood Momos 32",
+        "category": "Fastfood",
+        "price": 203,
+        "prep_time": 17,
+        "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&auto=format&fit=crop&q=60",
+        "is_new": "no"
+    },
+    {
+        "food_name": "Special Snack Samosa 33",
+        "category": "Snack",
+        "price": 417,
+        "prep_time": 14,
+        "image": "https://images.unsplash.com/photo-1484723091739-30a097e8f929?w=600&auto=format&fit=crop&q=60",
+        "is_new": "no"
+    },
+    {
+        "food_name": "Special South Indian Pongal 34",
+        "category": "South Indian",
+        "price": 443,
+        "prep_time": 21,
+        "image": "https://images.unsplash.com/photo-1668236543090-82eba5ee5976?w=600&auto=format&fit=crop&q=60",
+        "is_new": "no"
+    },
+    {
+        "food_name": "Special Biryani Donne 35",
+        "category": "Biryani",
+        "price": 91,
+        "prep_time": 14,
+        "image": "https://images.unsplash.com/photo-1589302168068-964664d93dc0?w=600&auto=format&fit=crop&q=60",
+        "is_new": "yes"
+    },
+    {
+        "food_name": "Special Biryani Donne 36",
+        "category": "Biryani",
+        "price": 83,
+        "prep_time": 22,
+        "image": "https://images.unsplash.com/photo-1589302168068-964664d93dc0?w=600&auto=format&fit=crop&q=60",
+        "is_new": "no"
+    },
+    {
+        "food_name": "Special Beverage Badam Milk 37",
+        "category": "Beverage",
+        "price": 341,
+        "prep_time": 20,
+        "image": "https://images.unsplash.com/photo-1609951651556-5334e2706168?w=600&auto=format&fit=crop&q=60",
+        "is_new": "yes"
+    },
+    {
+        "food_name": "Special Beverage Fruit Juice 38",
+        "category": "Beverage",
+        "price": 350,
+        "prep_time": 13,
+        "image": "https://images.unsplash.com/photo-1609951651556-5334e2706168?w=600&auto=format&fit=crop&q=60",
+        "is_new": "no"
+    },
+    {
+        "food_name": "Special Beverage Filter Coffee 39",
+        "category": "Beverage",
+        "price": 209,
+        "prep_time": 16,
+        "image": "https://images.unsplash.com/photo-1609951651556-5334e2706168?w=600&auto=format&fit=crop&q=60",
+        "is_new": "no"
+    },
+    {
+        "food_name": "Special South Indian Idli 40",
+        "category": "South Indian",
+        "price": 233,
+        "prep_time": 5,
+        "image": "https://images.unsplash.com/photo-1668236543090-82eba5ee5976?w=600&auto=format&fit=crop&q=60",
+        "is_new": "no"
+    },
+    {
+        "food_name": "Special Snack Vada Pav 41",
+        "category": "Snack",
+        "price": 214,
+        "prep_time": 21,
+        "image": "https://images.unsplash.com/photo-1484723091739-30a097e8f929?w=600&auto=format&fit=crop&q=60",
+        "is_new": "yes"
+    },
+    {
+        "food_name": "Special South Indian Uttapam 42",
+        "category": "South Indian",
+        "price": 75,
+        "prep_time": 20,
+        "image": "https://images.unsplash.com/photo-1668236543090-82eba5ee5976?w=600&auto=format&fit=crop&q=60",
+        "is_new": "no"
+    },
+    {
+        "food_name": "Special Fastfood Momos 43",
+        "category": "Fastfood",
+        "price": 298,
+        "prep_time": 6,
+        "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&auto=format&fit=crop&q=60",
+        "is_new": "no"
+    },
+    {
+        "food_name": "Special South Indian Pongal 44",
+        "category": "South Indian",
+        "price": 193,
+        "prep_time": 8,
+        "image": "https://images.unsplash.com/photo-1668236543090-82eba5ee5976?w=600&auto=format&fit=crop&q=60",
+        "is_new": "no"
+    },
+    {
+        "food_name": "Special Snack Samosa 45",
+        "category": "Snack",
+        "price": 187,
+        "prep_time": 8,
+        "image": "https://images.unsplash.com/photo-1484723091739-30a097e8f929?w=600&auto=format&fit=crop&q=60",
+        "is_new": "no"
+    },
+    {
+        "food_name": "Special Snack Kachori 46",
+        "category": "Snack",
+        "price": 281,
+        "prep_time": 14,
+        "image": "https://images.unsplash.com/photo-1484723091739-30a097e8f929?w=600&auto=format&fit=crop&q=60",
+        "is_new": "no"
+    },
+    {
+        "food_name": "Special Biryani Donne 47",
+        "category": "Biryani",
+        "price": 403,
+        "prep_time": 24,
+        "image": "https://images.unsplash.com/photo-1589302168068-964664d93dc0?w=600&auto=format&fit=crop&q=60",
+        "is_new": "no"
+    },
+    {
+        "food_name": "Special Snack Kachori 48",
+        "category": "Snack",
+        "price": 296,
+        "prep_time": 18,
+        "image": "https://images.unsplash.com/photo-1484723091739-30a097e8f929?w=600&auto=format&fit=crop&q=60",
+        "is_new": "no"
+    },
+    {
+        "food_name": "Special Fastfood Pasta 49",
+        "category": "Fastfood",
+        "price": 60,
+        "prep_time": 24,
+        "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&auto=format&fit=crop&q=60",
+        "is_new": "no"
+    },
+    {
+        "food_name": "Special Fastfood Burger 50",
+        "category": "Fastfood",
+        "price": 277,
+        "prep_time": 14,
+        "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&auto=format&fit=crop&q=60",
+        "is_new": "no"
+    },
+    {
+        "food_name": "Special Beverage Badam Milk 51",
+        "category": "Beverage",
+        "price": 85,
+        "prep_time": 5,
+        "image": "https://images.unsplash.com/photo-1609951651556-5334e2706168?w=600&auto=format&fit=crop&q=60",
+        "is_new": "no"
+    },
+    {
+        "food_name": "Special Biryani Egg Biryani 52",
+        "category": "Biryani",
+        "price": 361,
+        "prep_time": 5,
+        "image": "https://images.unsplash.com/photo-1589302168068-964664d93dc0?w=600&auto=format&fit=crop&q=60",
+        "is_new": "yes"
+    },
+    {
+        "food_name": "Special North Indian Naan 53",
+        "category": "North Indian",
+        "price": 278,
+        "prep_time": 18,
+        "image": "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600&auto=format&fit=crop&q=60",
+        "is_new": "no"
+    },
+    {
+        "food_name": "Special North Indian Naan 54",
+        "category": "North Indian",
+        "price": 263,
+        "prep_time": 10,
+        "image": "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600&auto=format&fit=crop&q=60",
+        "is_new": "no"
+    },
+    {
+        "food_name": "Special Fastfood French Fries 55",
+        "category": "Fastfood",
+        "price": 268,
+        "prep_time": 10,
+        "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&auto=format&fit=crop&q=60",
+        "is_new": "no"
+    },
+    {
+        "food_name": "Special Snack Pani Puri 56",
+        "category": "Snack",
+        "price": 131,
+        "prep_time": 22,
+        "image": "https://images.unsplash.com/photo-1484723091739-30a097e8f929?w=600&auto=format&fit=crop&q=60",
+        "is_new": "no"
+    },
+    {
+        "food_name": "Special Snack Bhel Puri 57",
+        "category": "Snack",
+        "price": 350,
+        "prep_time": 15,
+        "image": "https://images.unsplash.com/photo-1484723091739-30a097e8f929?w=600&auto=format&fit=crop&q=60",
+        "is_new": "yes"
+    },
+    {
+        "food_name": "Special Biryani Hyderabadi 58",
+        "category": "Biryani",
+        "price": 342,
+        "prep_time": 19,
+        "image": "https://images.unsplash.com/photo-1589302168068-964664d93dc0?w=600&auto=format&fit=crop&q=60",
+        "is_new": "no"
+    },
+    {
+        "food_name": "Special Biryani Hyderabadi 59",
+        "category": "Biryani",
+        "price": 181,
+        "prep_time": 22,
+        "image": "https://images.unsplash.com/photo-1589302168068-964664d93dc0?w=600&auto=format&fit=crop&q=60",
+        "is_new": "no"
+    },
+    {
+        "food_name": "Special Beverage Badam Milk 60",
+        "category": "Beverage",
+        "price": 112,
+        "prep_time": 8,
+        "image": "https://images.unsplash.com/photo-1609951651556-5334e2706168?w=600&auto=format&fit=crop&q=60",
+        "is_new": "no"
+    },
+    {
+        "food_name": "Special North Indian Naan 61",
+        "category": "North Indian",
+        "price": 168,
+        "prep_time": 8,
+        "image": "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600&auto=format&fit=crop&q=60",
+        "is_new": "no"
+    },
+    {
+        "food_name": "Special Beverage Cold Coffee 62",
+        "category": "Beverage",
+        "price": 185,
+        "prep_time": 6,
+        "image": "https://images.unsplash.com/photo-1609951651556-5334e2706168?w=600&auto=format&fit=crop&q=60",
+        "is_new": "no"
+    },
+    {
+        "food_name": "Special South Indian Dosa 63",
+        "category": "South Indian",
+        "price": 371,
+        "prep_time": 10,
+        "image": "https://images.unsplash.com/photo-1668236543090-82eba5ee5976?w=600&auto=format&fit=crop&q=60",
+        "is_new": "no"
+    },
+    {
+        "food_name": "Special Beverage Cold Coffee 64",
+        "category": "Beverage",
+        "price": 113,
+        "prep_time": 22,
+        "image": "https://images.unsplash.com/photo-1609951651556-5334e2706168?w=600&auto=format&fit=crop&q=60",
+        "is_new": "no"
+    },
+    {
+        "food_name": "Special Snack Pakoda 65",
+        "category": "Snack",
+        "price": 220,
+        "prep_time": 9,
+        "image": "https://images.unsplash.com/photo-1484723091739-30a097e8f929?w=600&auto=format&fit=crop&q=60",
+        "is_new": "no"
+    },
+    {
+        "food_name": "Special Fastfood Sandwich 66",
+        "category": "Fastfood",
+        "price": 448,
+        "prep_time": 13,
+        "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&auto=format&fit=crop&q=60",
+        "is_new": "no"
+    },
+    {
+        "food_name": "Special Biryani Egg Biryani 67",
+        "category": "Biryani",
+        "price": 242,
+        "prep_time": 7,
+        "image": "https://images.unsplash.com/photo-1589302168068-964664d93dc0?w=600&auto=format&fit=crop&q=60",
+        "is_new": "yes"
+    },
+    {
+        "food_name": "Special North Indian Paratha 68",
+        "category": "North Indian",
+        "price": 183,
+        "prep_time": 12,
+        "image": "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600&auto=format&fit=crop&q=60",
+        "is_new": "no"
+    },
+    {
+        "food_name": "Special South Indian Dosa 69",
+        "category": "South Indian",
+        "price": 150,
+        "prep_time": 7,
+        "image": "https://images.unsplash.com/photo-1668236543090-82eba5ee5976?w=600&auto=format&fit=crop&q=60",
+        "is_new": "yes"
+    },
+    {
+        "food_name": "Special Biryani Lucknowi 70",
+        "category": "Biryani",
+        "price": 74,
+        "prep_time": 20,
+        "image": "https://images.unsplash.com/photo-1589302168068-964664d93dc0?w=600&auto=format&fit=crop&q=60",
+        "is_new": "no"
+    },
+    {
+        "food_name": "Special North Indian Paratha 71",
+        "category": "North Indian",
+        "price": 395,
+        "prep_time": 18,
+        "image": "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600&auto=format&fit=crop&q=60",
+        "is_new": "no"
+    },
+    {
+        "food_name": "Special Fastfood Burger 72",
+        "category": "Fastfood",
+        "price": 291,
+        "prep_time": 20,
+        "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&auto=format&fit=crop&q=60",
+        "is_new": "yes"
+    },
+    {
+        "food_name": "Special North Indian Naan 73",
+        "category": "North Indian",
+        "price": 246,
+        "prep_time": 6,
+        "image": "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600&auto=format&fit=crop&q=60",
+        "is_new": "no"
+    },
+    {
+        "food_name": "Special South Indian Idli 74",
+        "category": "South Indian",
+        "price": 175,
+        "prep_time": 20,
+        "image": "https://images.unsplash.com/photo-1668236543090-82eba5ee5976?w=600&auto=format&fit=crop&q=60",
+        "is_new": "no"
+    },
+    {
+        "food_name": "Special North Indian Chole Bhature 75",
+        "category": "North Indian",
+        "price": 330,
+        "prep_time": 16,
+        "image": "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600&auto=format&fit=crop&q=60",
+        "is_new": "no"
+    },
+    {
+        "food_name": "Special Snack Kachori 76",
+        "category": "Snack",
+        "price": 405,
+        "prep_time": 23,
+        "image": "https://images.unsplash.com/photo-1484723091739-30a097e8f929?w=600&auto=format&fit=crop&q=60",
+        "is_new": "no"
+    },
+    {
+        "food_name": "Special Snack Pani Puri 77",
+        "category": "Snack",
+        "price": 238,
+        "prep_time": 20,
+        "image": "https://images.unsplash.com/photo-1484723091739-30a097e8f929?w=600&auto=format&fit=crop&q=60",
+        "is_new": "yes"
+    },
+    {
+        "food_name": "Special Fastfood Sandwich 78",
+        "category": "Fastfood",
+        "price": 317,
+        "prep_time": 24,
+        "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&auto=format&fit=crop&q=60",
+        "is_new": "no"
+    },
+    {
+        "food_name": "Special North Indian Paratha 79",
+        "category": "North Indian",
+        "price": 313,
+        "prep_time": 15,
+        "image": "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600&auto=format&fit=crop&q=60",
+        "is_new": "no"
+    },
+    {
+        "food_name": "Special Fastfood Burger 80",
+        "category": "Fastfood",
+        "price": 147,
+        "prep_time": 24,
+        "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&auto=format&fit=crop&q=60",
+        "is_new": "no"
+    },
+    {
+        "food_name": "Special South Indian Rava Kesari 81",
+        "category": "South Indian",
+        "price": 74,
+        "prep_time": 19,
+        "image": "https://images.unsplash.com/photo-1668236543090-82eba5ee5976?w=600&auto=format&fit=crop&q=60",
+        "is_new": "no"
+    },
+    {
+        "food_name": "Special South Indian Vada 82",
+        "category": "South Indian",
+        "price": 308,
+        "prep_time": 6,
+        "image": "https://images.unsplash.com/photo-1668236543090-82eba5ee5976?w=600&auto=format&fit=crop&q=60",
+        "is_new": "no"
+    },
+    {
+        "food_name": "Special South Indian Idli 83",
+        "category": "South Indian",
+        "price": 361,
+        "prep_time": 25,
+        "image": "https://images.unsplash.com/photo-1668236543090-82eba5ee5976?w=600&auto=format&fit=crop&q=60",
+        "is_new": "no"
+    },
+    {
+        "food_name": "Special Fastfood Pasta 84",
+        "category": "Fastfood",
+        "price": 302,
+        "prep_time": 11,
+        "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&auto=format&fit=crop&q=60",
+        "is_new": "no"
+    },
+    {
+        "food_name": "Special North Indian Paneer Tikka 85",
+        "category": "North Indian",
+        "price": 321,
+        "prep_time": 5,
+        "image": "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600&auto=format&fit=crop&q=60",
+        "is_new": "yes"
+    },
+    {
+        "food_name": "Special Snack Pakoda 86",
+        "category": "Snack",
+        "price": 429,
+        "prep_time": 24,
+        "image": "https://images.unsplash.com/photo-1484723091739-30a097e8f929?w=600&auto=format&fit=crop&q=60",
+        "is_new": "no"
+    },
+    {
+        "food_name": "Special South Indian Bhat 87",
+        "category": "South Indian",
+        "price": 216,
+        "prep_time": 7,
+        "image": "https://images.unsplash.com/photo-1668236543090-82eba5ee5976?w=600&auto=format&fit=crop&q=60",
+        "is_new": "yes"
+    },
+    {
+        "food_name": "Special Fastfood French Fries 88",
+        "category": "Fastfood",
+        "price": 146,
+        "prep_time": 9,
+        "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&auto=format&fit=crop&q=60",
+        "is_new": "no"
+    },
+    {
+        "food_name": "Special Fastfood Pizza 89",
+        "category": "Fastfood",
+        "price": 273,
+        "prep_time": 19,
+        "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&auto=format&fit=crop&q=60",
+        "is_new": "no"
+    },
+    {
+        "food_name": "Special Biryani Veg Biryani 90",
+        "category": "Biryani",
+        "price": 144,
+        "prep_time": 5,
+        "image": "https://images.unsplash.com/photo-1589302168068-964664d93dc0?w=600&auto=format&fit=crop&q=60",
+        "is_new": "no"
+    },
+    {
+        "food_name": "Special Fastfood Sandwich 91",
+        "category": "Fastfood",
+        "price": 102,
+        "prep_time": 23,
+        "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&auto=format&fit=crop&q=60",
+        "is_new": "no"
+    },
+    {
+        "food_name": "Special Beverage Filter Coffee 92",
+        "category": "Beverage",
+        "price": 445,
+        "prep_time": 22,
+        "image": "https://images.unsplash.com/photo-1609951651556-5334e2706168?w=600&auto=format&fit=crop&q=60",
+        "is_new": "no"
+    },
+    {
+        "food_name": "Special Beverage Cold Coffee 93",
+        "category": "Beverage",
+        "price": 304,
+        "prep_time": 25,
+        "image": "https://images.unsplash.com/photo-1609951651556-5334e2706168?w=600&auto=format&fit=crop&q=60",
+        "is_new": "no"
+    },
+    {
+        "food_name": "Special Beverage Badam Milk 94",
+        "category": "Beverage",
+        "price": 376,
+        "prep_time": 10,
+        "image": "https://images.unsplash.com/photo-1609951651556-5334e2706168?w=600&auto=format&fit=crop&q=60",
+        "is_new": "yes"
+    },
+    {
+        "food_name": "Special Biryani Donne 95",
+        "category": "Biryani",
+        "price": 287,
+        "prep_time": 8,
+        "image": "https://images.unsplash.com/photo-1589302168068-964664d93dc0?w=600&auto=format&fit=crop&q=60",
+        "is_new": "no"
+    },
+    {
+        "food_name": "Special Snack Kachori 96",
+        "category": "Snack",
+        "price": 304,
+        "prep_time": 11,
+        "image": "https://images.unsplash.com/photo-1484723091739-30a097e8f929?w=600&auto=format&fit=crop&q=60",
+        "is_new": "no"
+    },
+    {
+        "food_name": "Special Biryani Veg Biryani 97",
+        "category": "Biryani",
+        "price": 121,
+        "prep_time": 16,
+        "image": "https://images.unsplash.com/photo-1589302168068-964664d93dc0?w=600&auto=format&fit=crop&q=60",
+        "is_new": "no"
+    },
+    {
+        "food_name": "Special Beverage Badam Milk 98",
+        "category": "Beverage",
+        "price": 262,
+        "prep_time": 8,
+        "image": "https://images.unsplash.com/photo-1609951651556-5334e2706168?w=600&auto=format&fit=crop&q=60",
+        "is_new": "yes"
+    },
+    {
+        "food_name": "Special South Indian Pongal 99",
+        "category": "South Indian",
+        "price": 125,
+        "prep_time": 13,
+        "image": "https://images.unsplash.com/photo-1668236543090-82eba5ee5976?w=600&auto=format&fit=crop&q=60",
+        "is_new": "no"
+    },
+    {
+        "food_name": "Special North Indian Chole Bhature 100",
+        "category": "North Indian",
+        "price": 393,
+        "prep_time": 10,
+        "image": "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600&auto=format&fit=crop&q=60",
+        "is_new": "yes"
+    },
+    {
+        "food_name": "Special North Indian Chole Bhature 101",
+        "category": "North Indian",
+        "price": 450,
+        "prep_time": 22,
+        "image": "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600&auto=format&fit=crop&q=60",
+        "is_new": "no"
+    },
+    {
+        "food_name": "Special North Indian Dal Makhani 102",
+        "category": "North Indian",
+        "price": 50,
+        "prep_time": 25,
+        "image": "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600&auto=format&fit=crop&q=60",
+        "is_new": "no"
+    },
+    {
+        "food_name": "Special Fastfood Pasta 103",
+        "category": "Fastfood",
+        "price": 284,
+        "prep_time": 12,
+        "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&auto=format&fit=crop&q=60",
+        "is_new": "no"
+    },
+    {
+        "food_name": "Special North Indian Butter Chicken 104",
+        "category": "North Indian",
+        "price": 77,
+        "prep_time": 13,
+        "image": "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600&auto=format&fit=crop&q=60",
+        "is_new": "yes"
+    },
+    {
+        "food_name": "Special Beverage Masala Chai 105",
+        "category": "Beverage",
+        "price": 346,
+        "prep_time": 20,
+        "image": "https://images.unsplash.com/photo-1609951651556-5334e2706168?w=600&auto=format&fit=crop&q=60",
+        "is_new": "no"
+    },
+    {
+        "food_name": "Special Fastfood Pasta 106",
+        "category": "Fastfood",
+        "price": 213,
+        "prep_time": 23,
+        "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&auto=format&fit=crop&q=60",
+        "is_new": "yes"
+    },
+    {
+        "food_name": "Special North Indian Dal Makhani 107",
+        "category": "North Indian",
+        "price": 60,
+        "prep_time": 15,
+        "image": "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600&auto=format&fit=crop&q=60",
+        "is_new": "yes"
+    },
+    {
+        "food_name": "Special Beverage Masala Chai 108",
+        "category": "Beverage",
+        "price": 396,
+        "prep_time": 15,
+        "image": "https://images.unsplash.com/photo-1609951651556-5334e2706168?w=600&auto=format&fit=crop&q=60",
+        "is_new": "yes"
+    },
+    {
+        "food_name": "Special Beverage Masala Chai 109",
+        "category": "Beverage",
+        "price": 335,
+        "prep_time": 11,
+        "image": "https://images.unsplash.com/photo-1609951651556-5334e2706168?w=600&auto=format&fit=crop&q=60",
+        "is_new": "no"
+    },
+    {
+        "food_name": "Special North Indian Naan 110",
+        "category": "North Indian",
+        "price": 214,
+        "prep_time": 7,
+        "image": "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600&auto=format&fit=crop&q=60",
+        "is_new": "yes"
+    },
+    {
+        "food_name": "Special Fastfood Pasta 111",
+        "category": "Fastfood",
+        "price": 299,
+        "prep_time": 22,
+        "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&auto=format&fit=crop&q=60",
+        "is_new": "no"
+    },
+    {
+        "food_name": "Special South Indian Uttapam 112",
+        "category": "South Indian",
+        "price": 134,
+        "prep_time": 24,
+        "image": "https://images.unsplash.com/photo-1668236543090-82eba5ee5976?w=600&auto=format&fit=crop&q=60",
+        "is_new": "yes"
+    },
+    {
+        "food_name": "Special Fastfood Burger 113",
+        "category": "Fastfood",
+        "price": 407,
+        "prep_time": 20,
+        "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&auto=format&fit=crop&q=60",
+        "is_new": "no"
+    },
+    {
+        "food_name": "Special Fastfood French Fries 114",
+        "category": "Fastfood",
+        "price": 406,
+        "prep_time": 21,
+        "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&auto=format&fit=crop&q=60",
+        "is_new": "no"
+    },
+    {
+        "food_name": "Special North Indian Dal Makhani 115",
+        "category": "North Indian",
+        "price": 193,
+        "prep_time": 21,
+        "image": "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600&auto=format&fit=crop&q=60",
+        "is_new": "yes"
+    },
+    {
+        "food_name": "Special Snack Kachori 116",
+        "category": "Snack",
+        "price": 87,
+        "prep_time": 24,
+        "image": "https://images.unsplash.com/photo-1484723091739-30a097e8f929?w=600&auto=format&fit=crop&q=60",
+        "is_new": "yes"
+    },
+    {
+        "food_name": "Special Fastfood Momos 117",
+        "category": "Fastfood",
+        "price": 271,
+        "prep_time": 16,
+        "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&auto=format&fit=crop&q=60",
+        "is_new": "no"
+    },
+    {
+        "food_name": "Special Biryani Lucknowi 118",
+        "category": "Biryani",
+        "price": 358,
+        "prep_time": 7,
+        "image": "https://images.unsplash.com/photo-1589302168068-964664d93dc0?w=600&auto=format&fit=crop&q=60",
+        "is_new": "no"
+    },
+    {
+        "food_name": "Special Beverage Badam Milk 119",
+        "category": "Beverage",
+        "price": 213,
+        "prep_time": 12,
+        "image": "https://images.unsplash.com/photo-1609951651556-5334e2706168?w=600&auto=format&fit=crop&q=60",
+        "is_new": "no"
+    },
+    {
+        "food_name": "Special North Indian Paneer Tikka 120",
+        "category": "North Indian",
+        "price": 137,
+        "prep_time": 25,
+        "image": "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600&auto=format&fit=crop&q=60",
+        "is_new": "no"
+    }
+]
